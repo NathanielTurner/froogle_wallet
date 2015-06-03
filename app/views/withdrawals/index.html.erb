@@ -8,7 +8,7 @@
       <th>Amount</th>
       <th>Tracking</th>
       <th>Collector</th>
-      <th>Datr</th>
+      <th>date</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,7 +19,7 @@
         <td><%= withdrawal.amount %></td>
         <td><%= withdrawal.tracking_id %></td>
         <td><%= withdrawal.collector %></td>
-        <td><%= withdrawal.datr %></td>
+        <td><%= withdrawal.date %></td>
         <td><%= link_to 'Show', withdrawal %></td>
         <td><%= link_to 'Edit', edit_withdrawal_path(withdrawal) %></td>
         <td><%= link_to 'Destroy', withdrawal, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -4,7 +4,7 @@ class CreateWithdrawals < ActiveRecord::Migration
       t.float :amount
       t.integer :tracking_id
       t.string :collector
-      t.datetime :datr
+      t.datetime :date
 
       t.timestamps null: false
     end
