@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @withdrawal.amount %>
+</p>
+
+<p>
+  <strong>Tracking:</strong>
+  <%= @withdrawal.tracking_id %>
+</p>
+
+<p>
+  <strong>Collector:</strong>
+  <%= @withdrawal.collector %>
+</p>
+
+<p>
+  <strong>Datr:</strong>
+  <%= @withdrawal.datr %>
+</p>
+
+<%= link_to 'Edit', edit_withdrawal_path(@withdrawal) %> |
+<%= link_to 'Back', withdrawals_path %>
