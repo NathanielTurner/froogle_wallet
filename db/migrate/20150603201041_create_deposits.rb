@@ -8,6 +8,6 @@ class CreateDeposits < ActiveRecord::Migration
 
       t.timestamps null: false
     end
-    add_index :deposits, :tracking_id, unique: true
+      add_index :deposits, :tracking_id, unique: true
   end
 end

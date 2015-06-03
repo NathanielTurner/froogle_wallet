@@ -43,7 +43,7 @@ class DepositsControllerTest < ActionController::TestCase
     assert_difference('Deposit.count', -1) do
       delete :destroy, id: @deposit
     end
-
     assert_redirected_to deposits_path
   end
+  
 end

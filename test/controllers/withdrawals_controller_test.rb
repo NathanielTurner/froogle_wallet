@@ -18,8 +18,8 @@ class WithdrawalsControllerTest < ActionController::TestCase
 
   test "should create withdrawal" do
     assert_difference('Withdrawal.count') do
-      post :create, withdrawal: { amount: @withdrawal.amount, collector: @withdrawal.collector, datr: @withdrawal.datr, tracking_id: @withdrawal.tracking_id }
-    end
+    post :create, withdrawal: { amount: @withdrawal.amount, collector: @withdrawal.collector, date: @withdrawal.date, tracking_id: @withdrawal.tracking_id }
+  end
 
     assert_redirected_to withdrawal_path(assigns(:withdrawal))
   end
@@ -35,15 +35,15 @@ class WithdrawalsControllerTest < ActionController::TestCase
   end
 
   test "should update withdrawal" do
-    patch :update, id: @withdrawal, withdrawal: { amount: @withdrawal.amount, collector: @withdrawal.collector, datr: @withdrawal.datr, tracking_id: @withdrawal.tracking_id }
+    patch :update, id: @withdrawal, withdrawal: { amount: @withdrawal.amount, collector: @withdrawal.collector, date: @withdrawal.date, tracking_id: @withdrawal.tracking_id }
     assert_redirected_to withdrawal_path(assigns(:withdrawal))
   end
 
   test "should destroy withdrawal" do
     assert_difference('Withdrawal.count', -1) do
-      delete :destroy, id: @withdrawal
-    end
-
+    delete :destroy, id: @withdrawal
+  end
     assert_redirected_to withdrawals_path
   end
+  
 end
