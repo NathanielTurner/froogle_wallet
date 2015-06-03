@@ -11,3 +11,9 @@ two:
   tracking_id: 1
   investor: MyString
   date: 2015-06-03 16:10:41
+
+three:
+  amount: 50.25
+  tracking_id: 1
+  investor: Myself
+  date: 2015-06-03 16:10:41

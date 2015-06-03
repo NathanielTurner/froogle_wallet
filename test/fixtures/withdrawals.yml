@@ -4,10 +4,16 @@ one:
   amount: 1.5
   tracking_id: 1
   collector: MyString
-  datr: 2015-06-03 16:25:37
+  date: 2015-06-03 16:25:37
 
 two:
   amount: 1.5
-  tracking_id: 1
+  tracking_id: 2
   collector: MyString
-  datr: 2015-06-03 16:25:37
+  date: 2015-06-03 16:25:37
+
+three:
+  amount: 100.50
+  tracking_id: 3
+  collector: Thief
+  date: 2015-06-03 16:25:37
