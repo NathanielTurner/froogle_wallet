@@ -12,6 +12,9 @@ class DepositsController < ApplicationController
   def show
   end
 
+  def get
+  end
+
   # GET /deposits/new
   def new
     @deposit = Deposit.new
