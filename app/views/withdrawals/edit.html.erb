@@ -2,5 +2,4 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @withdrawal %> |
-<%= link_to 'Back', withdrawals_path %>
+<%= link_to "Main", controller: "main", action: "show", user: @user.id %>

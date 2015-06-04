@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'main/show'
   root 'users#new'
   resources :users
   resources :deposits

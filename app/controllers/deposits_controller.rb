@@ -5,6 +5,7 @@ class DepositsController < ApplicationController
   # GET /deposits.json
   def index
     @deposits = Deposit.all
+    @user = User.find(params[:user])
   end
 
   # GET /deposits/1
@@ -18,6 +19,7 @@ class DepositsController < ApplicationController
   # GET /deposits/new
   def new
     @deposit = Deposit.new
+    @user = User.find(params[:user])
   end
 
   # GET /deposits/1/edit

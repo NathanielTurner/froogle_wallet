@@ -15,5 +15,5 @@
   <%= @deposit.date %>
 </p>
 
+<%= link_to "Main", controller: "main", action: "show", user: @user.id %>
 <%= link_to 'Edit', edit_deposit_path(@deposit) %> |
-<%= link_to "Main", controller: "users", action: "Main" %>

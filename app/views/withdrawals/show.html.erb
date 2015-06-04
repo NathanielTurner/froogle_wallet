@@ -15,5 +15,5 @@
   <%= @withdrawal.collector %>
 </p>
 
+<%= link_to "Main", controller: "main", action: "show", user: @user.id %>
 <%= link_to 'Edit', edit_withdrawal_path(@withdrawal) %> |
-<%= link_to "Main", controller: "users", action: "get" %>

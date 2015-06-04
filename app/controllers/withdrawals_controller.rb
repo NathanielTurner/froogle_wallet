@@ -5,6 +5,7 @@ class WithdrawalsController < ApplicationController
   # GET /withdrawals.json
   def index
     @withdrawals = Withdrawal.all
+    @user = User.find(params[:user])
   end
 
   # GET /withdrawals/1
@@ -15,6 +16,7 @@ class WithdrawalsController < ApplicationController
   # GET /withdrawals/new
   def new
     @withdrawal = Withdrawal.new
+    @user = User.find(params[:user])
   end
 
   # GET /withdrawals/1/edit

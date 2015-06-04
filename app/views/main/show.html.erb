@@ -1,0 +1,5 @@
+
+<%= link_to "Withdraw", controller: "withdrawals", action: "new", user: @user.id %>
+<%= link_to "Deposit", controller: "deposits", action: "new", user: @user.id %>
+<%= link_to "Debits", controller: "withdrawals", action: "index", user: @user.id %>
+<%= link_to "Credits", controller: "deposits", action: "index", user: @user.id %>
