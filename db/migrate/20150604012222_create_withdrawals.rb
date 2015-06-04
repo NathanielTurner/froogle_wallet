@@ -4,7 +4,7 @@ class CreateWithdrawals < ActiveRecord::Migration
       t.float :amount
       t.datetime :date
       t.string :collector
-
+      t.integer :user_id
       t.timestamps null: false
     end
   end

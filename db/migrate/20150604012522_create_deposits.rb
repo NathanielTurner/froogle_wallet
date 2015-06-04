@@ -4,7 +4,7 @@ class CreateDeposits < ActiveRecord::Migration
       t.string :investor
       t.float :amount
       t.datetime :date
-
+      t.integer :user_id
       t.timestamps null: false
     end
   end
